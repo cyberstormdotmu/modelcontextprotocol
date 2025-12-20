@@ -380,7 +380,7 @@ The MCP client **SHOULD** implement additional checks and guardrails to mitigate
 - Display warnings for commands that access sensitive locations (home directory, SSH keys, system directories)
 - Warn that MCP servers run with the same privileges as the client
 - Execute MCP server commands in a sandboxed environment with minimal default privileges
-- Launch MCP servers with restricted access to the file system, network, and other system resources
+- Launch MCP servers with restricted access to the file system, network, environment variables and other system resources
 - Provide mechanisms for users to explicitly grant additional privileges (e.g., specific directory access, network access) when needed
 - Use platform-appropriate sandboxing technologies (containers, chroot, application sandboxes, etc.)
 

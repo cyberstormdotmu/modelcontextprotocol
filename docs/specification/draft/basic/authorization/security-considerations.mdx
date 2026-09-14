@@ -39,8 +39,8 @@ Implementations **MUST** follow [OAuth 2.1 Section 1.5 "Communication Security"]
 
 Specifically:
 
-1. All authorization server endpoints **MUST** be served over HTTPS.
-1. All redirect URIs **MUST** be either `localhost` or use HTTPS.
+1. All OAuth protocol endpoints and resources, including authorization server endpoints, MCP resource server endpoints, Protected Resource Metadata, authorization server metadata, and client registration endpoints **MUST** be served over HTTPS.
+2. All redirect URIs **MUST** be either `localhost` or use HTTPS.
 
 ## Authorization Code Protection
 
